@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    html,
+    body {
+        overflow: hidden;
+    }
+
+    .botones {
+        display: none;
+    }
+
+    table {
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+}

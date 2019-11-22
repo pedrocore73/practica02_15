@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <td>Nombre</td>
+        <td>Apellidos</td>
+        <td>Correo electrónico</td>
+        <td>Empresa</td>
+    </tr>
+    <tr *ngFor="let asistente of asistentes">
+        <td>{{asistente?.nombre}}</td>
+        <td>{{asistente?.apellidos}}</td>
+        <td>{{asistente?.email}}</td>
+        <td>{{asistente?.empresa}}</td>
+    </tr>
+</table>
+<div class="botones">
+    <button (click)="imprimirTabla()">Imprimir</button>
+</div>
